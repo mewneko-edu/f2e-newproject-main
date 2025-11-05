@@ -4,8 +4,8 @@
 <head>
     <title>柑仔影院</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/favicon.ico">
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +15,12 @@
 <body>
     <!--header目錄-->
     <header class="header">
-        <a class="header_logo" href="index.html"><img src="img/logo.svg" alt="logo_img"></a>
+        <a class="header_logo" href="index.html"><img src="./img/logo.svg" alt="logo_img"></a>
         <ul class="header-nav-list">
-            <li class="header-nav-list-item"><a href="index.html" class="header-nav-list-link">關於我們</a></li>
-            <li class="header-nav-list-item"><a href="product/product.html" class="header-nav-list-link">販售商品</a></li>
-            <li class="header-nav-list-item"><a href="movie/movie.html" class="header-nav-list-link">影院資訊</a></li>
-            <li class="header-nav-list-item"><a href="order/order.html" class="header-nav-list-link">電影訂票</a></li>
+            <li class="header-nav-list-item"><a href="./index.html" class="header-nav-list-link">關於我們</a></li>
+            <li class="header-nav-list-item"><a href="./product.html" class="header-nav-list-link">販售商品</a></li>
+            <li class="header-nav-list-item"><a href="./movie.html" class="header-nav-list-link">影院資訊</a></li>
+            <li class="header-nav-list-item"><a href="./order.html" class="header-nav-list-link">電影訂票</a></li>
         </ul>
     </header>
 
@@ -28,24 +28,24 @@
     <main class="main">
         <div class="container">
             <section class="banner">
-                <img src="img/hero.svg" alt="banner_img"><!--橫幅圖片:柑仔影院-->
+                <img src="./img/hero.svg" alt="banner_img"><!--橫幅圖片:柑仔影院-->
             </section>
             <section class="content">
                 <div class="block_1"><!--第一塊圖+文-->
                     <p>玻璃罐裡裝著時間，<br>糖果的甜在空氣裡化開。</p>
-                    <img src="img/main_1.svg" alt="candy_img">
+                    <img src="./img/main_1.svg" alt="candy_img">
                 </div>
                 <div class="block_2"><!--第二塊圖-->
-                    <img src="img/main_2.svg" alt="movie1_img">
+                    <img src="./img/main_2.svg" alt="movie1_img">
                     <p>二樓的電影散發著柔光，照亮一段舊日子。</p>
                 </div>
                 <div class="block_3"><!--三塊文+圖-->
-                    <img src="img/main_3.svg" alt="movie2_img">
+                    <img src="./img/main_3.svg" alt="movie2_img">
                     <p>柑仔店，永遠開在那個午後。</p>
                 </div>
             </section>
             <section class="aboutus"><!--關於我們文＋圖-->
-                <img src="img/main_4.png" alt="aboutus_img">
+                <img src="./img/main_4.png" alt="aboutus_img">
                 <div class="aboutus_text">
                     <p>我們相信，時間不會帶走一切，<br>
                         有些記憶會留在某些地方。<br>
@@ -53,8 +53,7 @@
                         是一段可以「被重訪的時間」。<br>
                         在這裡，我們把童年的味道、<br>
                         老電影的光影以及那份單純的快樂重新拼起來，<br>
-                        讓柑仔影院成為一個能讓大家「重訪過去」的地方。
-                    </p>
+                        讓柑仔影院成為一個能讓大家「重訪過去」的地方。</p>
                 </div>
             </section>
         </div>
@@ -65,38 +64,12 @@
         ↑
     </button>
 
-    <script>
-        // 取得按鈕元素
-        const backToTopBtn = document.getElementById('backToTopBtn');
-        // 設定按鈕顯示的滾動距離 (例如：滾動超過 300px 時顯示)
-        const scrollThreshold = 300; 
-        // 函式：偵測滾動，決定按鈕是否顯示
-        function toggleBackToTopButton() {
-            if (window.scrollY > scrollThreshold) {
-                // 滾動超過門檻，顯示按鈕
-                backToTopBtn.classList.add('show');
-            } else {
-                // 否則隱藏按鈕
-                backToTopBtn.classList.remove('show');
-            }
-        }
-        // 函式：點擊按鈕後平滑滾動到頂部
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // 使用平滑滾動效果
-            });
-        }
-        // 綁定事件監聽器
-        // 1. 頁面滾動時執行偵測函式
-        window.addEventListener('scroll', toggleBackToTopButton);
-        // 2. 按鈕被點擊時執行回頂函式
-        backToTopBtn.addEventListener('click', scrollToTop);
-    </script>
-
+    <script src="./js/button.js"></script>
+    <script src="./js/fadein.js"></script>
+ 
     <footer class="footer"><!--footer目錄-->
         <div class="footer_left">
-            <a class="footer_logo" href="index.html"><img src="img/logo.svg" alt="logo_img"></a>
+            <a class="footer_logo" href="./index.html"><img src="./img/logo.svg" alt="logo_img"></a>
             <div class="footer_info">
                 <p>地址：臺北市大安區和平東路2段134號</p>
                 <p>電話：02-2732-1104</p>
@@ -104,10 +77,10 @@
         </div>
 
         <ul class="footer-nav-list">
-            <li class="footer-nav-list-item"><a href="index.html" class="footer-nav-list-link">關於我們</a></li>
-            <li class="footer-nav-list-item"><a href="product/product.html" class="footer-nav-list-link">販售商品</a></li>
-            <li class="footer-nav-list-item"><a href="movie/movie.html" class="footer-nav-list-link">影院資訊</a></li>
-            <li class="footer-nav-list-item"><a href="order/order.html" class="footer-nav-list-link">電影訂票</a></li>
+            <li class="footer-nav-list-item"><a href="./index.html" class="footer-nav-list-link">關於我們</a></li>
+            <li class="footer-nav-list-item"><a href="./product.html" class="footer-nav-list-link">販售商品</a></li>
+            <li class="footer-nav-list-item"><a href="./movie.html" class="footer-nav-list-link">影院資訊</a></li>
+            <li class="footer-nav-list-item"><a href="./order.html" class="footer-nav-list-link">電影訂票</a></li>
         </ul>
     </footer>
 
